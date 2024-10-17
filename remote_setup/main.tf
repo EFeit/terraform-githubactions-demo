@@ -33,7 +33,7 @@ resource "azuread_service_principal_password" "gh_actions" {
 }
 
 resource "azurerm_role_assignment" "gh_actions" {
-  scope                = data.azurerm_subscription.current.id
+  scope                = azurerm_resource_group.setup.id
   role_definition_name = "Contributor"
   principal_id         = azuread_service_principal.gh_actions.id
 }
