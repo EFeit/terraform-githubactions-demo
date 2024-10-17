@@ -29,10 +29,3 @@ variable "capacity" {
   description = "Number of instances for App Service Plan"
   default     = "1"
 }
-
-variable "azure_storage_account_key" {
-  description = "The access key for the Azure Storage Account"
-  type        = string
-  sensitive   = true
-  default     = "Q1VWIeXNXYoFt6jzsyfH+cv5d3t5i/TDfJMXk8+SaW5ErF8lwF3u9BnNNJhqw9MNPeazQvZ1bV7Z+OB1nVtPrA=="
-}

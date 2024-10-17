@@ -7,6 +7,7 @@ locals {
   resource_group_name   = "${var.naming_prefix}-${random_integer.name_suffix.result}"
   app_service_plan_name = "${var.naming_prefix}-${random_integer.name_suffix.result}"
   app_service_name      = "${var.naming_prefix}-${random_integer.name_suffix.result}"
+  password = "password"
 }
 
 resource "random_integer" "name_suffix" {
