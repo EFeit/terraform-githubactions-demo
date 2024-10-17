@@ -7,7 +7,6 @@ locals {
   resource_group_name   = "${var.naming_prefix}-${random_integer.name_suffix.result}"
   app_service_plan_name = "${var.naming_prefix}-${random_integer.name_suffix.result}"
   app_service_name      = "${var.naming_prefix}-${random_integer.name_suffix.result}"
-  API_KEY = "zaCELgL.0imfnc8mVLWwsAawjYr4Rx-Af50DDqtlx"
 }
 
 resource "random_integer" "name_suffix" {
