@@ -7,8 +7,6 @@ locals {
   resource_group_name   = "${var.naming_prefix}-${random_integer.name_suffix.result}"
   app_service_plan_name = "${var.naming_prefix}-${random_integer.name_suffix.result}"
   app_service_name      = "${var.naming_prefix}-${random_integer.name_suffix.result}"
-  aws_access_key        = "AKIAIOSFODNN7EXAMPLE"
-  aws_secret_key        = "wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY"
 }
 
 resource "random_integer" "name_suffix" {
