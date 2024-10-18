@@ -74,4 +74,4 @@ From the `remote_setup` directory run `terraform destroy` to delete all supporti
 
 And that's it! You've cleaned up.
 
-Let's test!
+Let's test!!
